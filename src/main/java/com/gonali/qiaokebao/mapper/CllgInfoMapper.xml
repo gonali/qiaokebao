@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.CllgInfoMapper">
+
+    <insert id="insert">
+        INSERT INTO tbCllgInfo (userId,cllgName,clssName)
+        VALUES (#{userId},#{cllgName},#{clssName})
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM tbCllgInfo WHERE cllgId=#{id}
+    </delete>
+
+    <update id="flagDelete">
+        UPDATE tbCllgInfo SET delFlag=TRUE WHERE cllgId=#{id}
+    </update>
+
+    <update id="update">
+        UPDATE tbCllgInfo SET cllgName=#{cllgName},clssName=#{clssName}
+        WHERE cllgId=#{cllgId}
+    </update>
+
+    <select id="countAll">
+        SELECT COUNT(*) FROM tbCllgInfo
+    </select>
+
+    <select id="findById">
+        SELECT * FROM tbCllgInfo WHERE cllgId=#{id}
+    </select>
+
+    <delete id="findAll">
+        SELECT * FROM tbCllgInfo ORDER BY #{order}
+    </delete>
+
+    <select id="findByPage">
+        SELECT * FROM tbCllgInfo ORDER BY #{order} DESC LIMIT #{start},#{pageSize}
+    </select>
+
+    <update id="updateByUser">
+        UPDATE tbCllgInfo SET cllgName=#{cllgName},clssName=#{clssName}
+        WHERE cllgId=#{cllgId} AND userId=#{userId}
+    </update>
+
+</mapper>

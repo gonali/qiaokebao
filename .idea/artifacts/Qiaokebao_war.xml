@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Qiaokebao:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Qiaokebao-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Qiaokebao:war exploded" />
+    </root>
+  </artifact>
+</component>

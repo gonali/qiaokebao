@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.CrdtMapper">
+
+    <insert id="insert">
+        INSERT INTO tbCrdt (userId,credit,frozen,useable,describe)
+        VALUES (#{userId},#{credit},#{frozen},#{useable},#{describe})
+    </insert>
+
+    <update id="update">
+        UPDATE tbCrdt SET credit=#{credit},frozen=#{frozen},useable=#{useable},describe=#{describe}
+        WHERE crdtId=#{crdtId} AND userId=#{userId}
+    </update>
+
+</mapper>

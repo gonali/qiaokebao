@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.CrdtLogMapper">
+
+    <insert id="insert">
+        INSERT INTO tbCrdtLog (userId,credit,direction,describe)
+        VALUES (#{userId},#{credit},#{direction},#{describe})
+    </insert>
+
+    <select id="findByUserId">
+        SELECT * FROM tbCrdtLog WHERE userId = #{userId}
+    </select>
+
+
+    <select id="findPageByUserId">
+        SELECT * FROM tbCrdtLog WHERE userId = #{userId} ORDER BY
+        #{order} LIMIT #{start},#{pageSize}
+    </select>
+
+</mapper>

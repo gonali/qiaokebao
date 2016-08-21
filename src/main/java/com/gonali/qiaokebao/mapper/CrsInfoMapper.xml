@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.CrsInfoMapper">
+
+    <insert id="insert">
+        INSERT INTO tbCrsInfo (userId,crsName,crsLocation,crsTchrName,crsWeek,crsTime)
+        VALUES (#{userId},#{crsName},#{crsLocation},#{crsTchrName},#{crsWeek,#{crsTime})
+    </insert>
+
+    <delete id="deleteByUser">
+        DELETE FROM tbCrsInfo WHERE crsId=#{crsId} AND userId=#{userId}
+    </delete>
+
+
+    <update id="update">
+        UPDATE tbCrsInfo SET crsName=#{crsName},crsLocation=#{srsLocation},
+        crsTchrName=#{crsTchrName},crsWeek=#{crsWeek},crsTime=#{crsTime}
+        WHERE crsId=#{crsId} AND userId=#{userId}
+    </update>
+
+
+</mapper>

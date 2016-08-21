@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.MsgTaskMapper">
+
+    <insert id="insert">
+        INSERT INTO tbMsgTask (msgId,creatorId,geterId,isGeterFinish,
+        isCreatorConfirm,mtStatus,isValid,createDate,finishDate,
+        confirmDate) VALUES (#{msgId},#{creatorId},#{geterId},
+        #{isGeterFinish},#{isCreatorConfirm},#{mtStatus},#{isValid},
+        #{createDate},#{finishDate},#{confirmDate})
+    </insert>
+
+    <select id="selectByCreatorId">
+        SELECT * FROM tbMsgTask WHERE creatorId=#{creatorId}
+    </select>
+
+    <select id="selectByGetterId">
+        SELECT * FROM tbMsgTask WHERE creatorId=#{geterId}
+    </select>
+
+</mapper>

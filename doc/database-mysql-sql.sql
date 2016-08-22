@@ -8,10 +8,11 @@
  */
 CREATE TABLE `tbRole` (
 
-`roleId` BIGINT  NOT NULL COMMENT '角色Id',
+`roleId` BIGINT  AUTO_INCREMENT COMMENT '角色Id',
 `name` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '角色名称',
 `authority` VARCHAR (9) CHARACTER SET utf8 DEFAULT 'rwx------' COMMENT '权限 参考于linux 为 属主-好友-其他',
-
+`createDate` DATETIME DEFAULT NULL,
+`delFlag` BOOLEAN DEFAULT FALSE ,
  PRIMARY KEY (`roleId`)
 
 );
@@ -233,6 +234,8 @@ CREATE TABLE `tbPay`(
   `credit` INT,
   `money` FLOAT(5,2),
   `status`ENUM('SUCCESS','FAILED','CLOSED','UNDEFINE') CHARACTER SET utf8 DEFAULT 'UNDEFINE',
+  `createDate` DATETIME DEFAULT NULL,
+  `delFlag` BOOLEAN DEFAULT FALSE,
 
   PRIMARY KEY (`payId`),
   FOREIGN KEY (`userId`) REFERENCES tbUser(`userId`)

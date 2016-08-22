@@ -1,6 +1,7 @@
 package com.gonali.qiaokebao.model;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  * Created by TianyuanPan on 8/16/16.
@@ -13,6 +14,8 @@ public class Pay implements Serializable {
     private int credit;
     private float money;
     private String status;
+    private Date createDate;
+    private boolean delFlag;
 
 
     public long getPayId() {
@@ -61,5 +64,21 @@ public class Pay implements Serializable {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public boolean isDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(boolean delFlag) {
+        this.delFlag = delFlag;
     }
 }

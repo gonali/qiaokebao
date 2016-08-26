@@ -9,8 +9,15 @@ import java.util.ResourceBundle;
 
 /**
  * Created by Administrator on 2016/8/26.
+
+ 短信API：
+ 天翼-电信
+ http://open.189.cn/show-6-88-1.html
+ 账号:goanli@aliyun.com
+ 密码:大劈机耳猛爱特鸡呕嗯叉叉点卡盟
+
  */
-public class SendSMSauthCode {
+public class SendSmsAuthCode {
 
     private static String SMS_APP_ID = "279571240000256451";//应用ID------登录平台在应用设置可以找到
     private static String SMS_APP_SECRET = "e9c8c5bcfbfb3ca77bdde023940dc763";//应用secret-----登录平台在应用设置可以找到
@@ -34,7 +41,7 @@ public class SendSMSauthCode {
     }
 
 
-    public SendSMSauthCode() {
+    public SendSmsAuthCode() {
 
         this.httpClientUtils = new HttpClientUtils();
     }
@@ -71,15 +78,13 @@ public class SendSMSauthCode {
     }
 
 /*
-
     public static void main(String[] args) {
-        SendSMSauthCode sendSMSauthCode = new SendSMSauthCode();
+        SendSmsAuthCode sendSMSauthCode = new SendSmsAuthCode();
 
         //sendSMSauthCode.sendAuthCode("1234", "1234");
         //System.out.println(sendSMSauthCode.getToken());
-        sendSMSauthCode.sendAuthCode("18285117781", "123456");
-    }
-*/
+        sendSMSauthCode.sendAuthCode("18285117781", "886231");
+    }*/
 
 
 }

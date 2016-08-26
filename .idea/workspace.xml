@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c58fabb-f889-4531-a33f-c299eb1d7094" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/ConfigUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/a.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Base64Encoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/HmacSha1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SMSModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Sha1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/TokenModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientCommon.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/resources.properties" afterPath="$PROJECT_DIR$/src/main/resources/sms_config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/SchlLocation.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/SchlLocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sms_config.properties" afterPath="$PROJECT_DIR$/src/main/resources/sms_config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/CCATModel.java" />
     </list>
     <ignored path="Qiaokebao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,26 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-database.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-database.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,54 +60,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SMSModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SMSModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendSMSauthCode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="58" column="64" selection-start-line="58" selection-start-column="64" selection-end-line="58" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CCATModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1175#1176#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1345#1346#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,9 +73,39 @@
       <file leaf-file-name="sms_config.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sms_config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="266">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCATModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/CCATModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
+                <element signature="e#1354#1355#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,7 +113,7 @@
       <file leaf-file-name="ConfigUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/ConfigUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="356">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,11 +122,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/TokenModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendSMSauthCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,13 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/SchlInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/CrsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/MsgJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/MsgTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/Crdt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/Expsn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/CllgInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/dao/BaseDao.java" />
@@ -232,9 +219,16 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/ConfigUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientCommon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/CCATModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Base64Encoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Sha1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/HmacSha1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SMSModel.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sms_config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/TokenModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java" />
       </list>
     </option>
   </component>
@@ -426,6 +420,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiaokebao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiaokebao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiaokebao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authorityCode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -989,7 +1017,7 @@
       <workItem from="1471660277360" duration="23083000" />
       <workItem from="1471785877250" duration="212000" />
       <workItem from="1471828632472" duration="9991000" />
-      <workItem from="1471913681698" duration="22053000" />
+      <workItem from="1471913681698" duration="25976000" />
     </task>
     <task id="LOCAL-00001" summary="add some xml files and mapper">
       <created>1471853316310</created>
@@ -1005,11 +1033,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472122204527</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add AccessToken get request.">
+      <created>1472197566092</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1472197566092</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84836000" />
+    <option name="totallyTimeSpent" value="88759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1060,13 +1095,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add some xml files and mapper" />
     <MESSAGE value="add some new." />
-    <option name="LAST_COMMIT_MESSAGE" value="add some new." />
+    <MESSAGE value="add AccessToken get request." />
+    <option name="LAST_COMMIT_MESSAGE" value="add AccessToken get request." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/CCATModel.java</url>
           <line>79</line>
           <properties />
           <option name="timeStamp" value="6" />
@@ -1081,44 +1117,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/model/CrsInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1288,31 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/SchlLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="e#307#308#0" expanded="false" />
-            <element signature="e#338#339#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#426#427#0" expanded="false" />
-            <element signature="e#457#458#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-            <element signature="e#524#525#0" expanded="false" />
-            <element signature="e#556#557#0" expanded="false" />
-            <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-            <element signature="e#745#746#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/SchlInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1416,16 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/database-mysql-sql.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1457,14 +1420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1503,14 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sms_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1522,9 +1469,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/SchlLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Sha1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1211">
+          <caret line="248" column="35" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
+          <folding>
+            <element signature="e#2932#2933#0" expanded="false" />
+            <element signature="e#2981#2982#0" expanded="false" />
+            <element signature="e#3028#3029#0" expanded="false" />
+            <element signature="e#3068#3069#0" expanded="false" />
+            <element signature="e#3115#3116#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3213#3214#0" expanded="false" />
+            <element signature="e#3269#3270#0" expanded="false" />
+            <element signature="e#7498#7499#0" expanded="false" />
+            <element signature="e#7577#7578#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/HmacSha1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/Base64Encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/ConfigUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="356">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1532,48 +1540,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/CCATModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utilsModel/CCATModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SMSModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sms_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="58" column="64" selection-start-line="58" selection-start-column="64" selection-end-line="58" selection-end-column="64" />
+        <state relative-caret-position="380">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/TokenModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

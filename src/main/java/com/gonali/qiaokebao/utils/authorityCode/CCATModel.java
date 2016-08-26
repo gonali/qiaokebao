@@ -1,4 +1,4 @@
-package com.gonali.qiaokebao.utilsModel;
+package com.gonali.qiaokebao.utils.authorityCode;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

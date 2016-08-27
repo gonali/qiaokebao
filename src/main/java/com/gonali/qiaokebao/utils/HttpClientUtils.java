@@ -4,14 +4,12 @@ package com.gonali.qiaokebao.utils;
 import com.gonali.qiaokebao.utils.authorityCode.CCATModel;
 import com.gonali.qiaokebao.utils.authorityCode.SMSModel;
 import com.gonali.qiaokebao.utils.authorityCode.TokenModel;
-import org.apache.commons.codec.net.URLCodec;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -20,8 +18,6 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -176,7 +172,7 @@ public class HttpClientUtils {
         formparams.add(new BasicNameValuePair("sign", model.getSign()));
         HttpEntity uefEntity;
         try {
-            uefEntity = new StringEntity(model.toString(),"UTF-8");// UrlEncodedFormEntity(formparams, "UTF-8");
+            uefEntity = new StringEntity(model.toString(), "UTF-8");// UrlEncodedFormEntity(formparams, "UTF-8");
             postRequest.setEntity(uefEntity);
             System.out.println("executing request " + postRequest.getURI());
             System.out.println("Entity: " + EntityUtils.toString(uefEntity));

@@ -47,7 +47,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- <property name="configLocation" value="classpath:mybatis-config.xml" /> -->
         <property name="dataSource" ref="dataSource"/>
-        <property name="typeAliasesPackage" value="com.cloudpioneer.dataGushi.domain"/>
+        <property name="typeAliasesPackage" value="com.gonali.qiaokebao.model"/>
     </bean>
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
@@ -57,7 +57,7 @@
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开 -->
-        <property name="basePackage" value="com.cloudpioneer.dataGushi.mapper"/>
+        <property name="basePackage" value="com.gonali.qiaokebao.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 

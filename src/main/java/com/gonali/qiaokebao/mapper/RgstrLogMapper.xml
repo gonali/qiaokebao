@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gonali.qiaokebao.mapper.RgstrLogMapper">
+
+    <insert id="insert">
+        INSERT INTO tbRgstrLog (phone,authCode,datetime,status,isValid)
+        VALUES (#{phone},#{authCode},#{datetime},#{status},#{isValid})
+    </insert>
+
+    <update id="registerConfirm">
+        UPDATE tbRgisterLog SET  status='SUCCESS',isValid=FALSE  WHERE rgstrId=#{rgstrId} AND phone = #{phone}
+    </update>
+
+
+    <select id="findByPhoneAndCode">
+        SELECT * FROM tbRgstrLog WHERE phone=#{phone} AND authCode=#{code} AND isValid=TRUE ORDER BY #{order}
+    </select>
+
+</mapper>

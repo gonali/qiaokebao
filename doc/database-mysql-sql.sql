@@ -66,6 +66,21 @@ schlLocation JSON:
 
  );
 
+/**
+register log table
+记录注册行为
+ */
+
+CREATE TABLE `tbRgstrLog`(
+  `rgstrId` BIGINT AUTO_INCREMENT COMMENT '主键，注册日志Id',
+  `phone` VARCHAR(13) CHARACTER SET utf8  COMMENT '注册的手机号码',
+  `authCode` VARCHAR(6) CHARACTER SET utf8 COMMENT '验证码',
+  `datetime` DATETIME DEFAULT NULL COMMENT '注册生成时间',
+  `status` ENUM('SUCCESS','FAILED','WAITING','UNDEFINE') CHARACTER SET utf8 DEFAULT 'WAITING' COMMENT '状态',
+  `isValid` BOOLEAN DEFAULT TRUE COMMENT '日志有效性',
+  PRIMARY KEY (`rgstrId`)
+);
+
 
 
 

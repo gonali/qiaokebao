@@ -3,10 +3,13 @@ package com.gonali.qiaokebao.mapper;
 import com.gonali.qiaokebao.dao.BaseDao;
 import com.gonali.qiaokebao.model.User;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Administrator on 2016/8/22.
  */
+
+@Repository
 public interface UserMapper extends BaseDao<User> {
 
     Integer updateRealName(@Param("userId") Object userId, @Param("realName") Object realName) throws Exception;

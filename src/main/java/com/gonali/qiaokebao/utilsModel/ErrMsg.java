@@ -15,11 +15,15 @@ public final class ErrMsg {
        //msg 3
          "Send SMS auth code error!!!",
        //msg 4
-          "Server internal error, write to RgstrLog error."
+          "Server internal error, write to RgstrLog error.",
        //msg 5
+            "Server internal error,maybe authCode error or timeout!!!",
        //msg 6
+            "Server internal error, user register failed!!!",
        //msg 7
+            "Server internal error!!!",
        //msg 8
+            "Checksum Signature failed."
        //msg 9
        //msg 10
        //msg 11

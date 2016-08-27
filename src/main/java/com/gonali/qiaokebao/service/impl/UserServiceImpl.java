@@ -24,4 +24,18 @@ public class UserServiceImpl implements UserService {
 
         return false;
     }
+
+    @Override
+    public User findUserById(String userId) throws Exception {
+
+        return mapper.findById(userId);
+    }
+
+
+    @Override
+    public Integer updatePassword(String userId, String password) throws Exception {
+        return mapper.updatePassword(userId, password);
+    }
+
+
 }

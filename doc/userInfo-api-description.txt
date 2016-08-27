@@ -1,0 +1,33 @@
+-------------------------------------------------------------
+=============================================================
+
+
+接口描述： 用户修改密码接口
+API地址： http://hostname:port/api/userInfo/set/password/{userId}/{signature}/{password}
+请求方法：POST
+编码：utf-8
+参数说明：
+  没有Bogdy参数，由路径传入
+      名称            类型         必须            说明
+      userId           String       true      用户Id
+      signature        String       true     签名串，userId用原来的password签名得到
+      password        String       true      新密码串
+
+
+接口返回说明：
+返回类型：json
+成功返回：
+        {
+           "statusCode":0
+        }
+
+
+失败返回：
+
+        {
+          "statusCode":error code,
+          "message":"error message"
+        }
+-------------------------------------------------------------
+
+================================================================

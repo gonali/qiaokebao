@@ -36,3 +36,39 @@ API地址： http://hostname:port/api/user/register/getAuthCode
         }
 -------------------------------------------------------------
 =============================================================
+
+
+接口描述： 用户获得注册码后提交注册的接口
+API地址： http://hostname:port/api/user/register/action
+请求方法：POST
+编码：utf-8
+参数说明：
+      名称            类型         必须
+      phone           String       true
+      nickname        String       true
+      authCode        String       true
+
+请求参数 JSON 格式说明：
+
+    {
+       "phone":"15012341234",
+       "nickname":"alili",
+       "authCode":"code"
+    }
+
+接口返回说明：
+返回类型：json
+成功返回：
+        {
+           "statusCode":0
+        }
+
+
+失败返回：
+
+        {
+          "statusCode":error code,
+          "message":"error message"
+        }
+-------------------------------------------------------------
+=============================================================

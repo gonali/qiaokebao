@@ -5,14 +5,14 @@ package com.gonali.qiaokebao.utilsModel;
  */
 public class ResStatus {
 
-    public static String successReturn(){
+    public static String successReturn() {
 
-        return "{\"statusCode\":0}";
+        return "{\"statusCode\":" + ResCodes.SUCCESS + "}";
     }
 
-    public  static String failedReturn(int code, String message){
+    public static String failedReturn(int code, String message) {
 
-        return "{\"statusCode\":" + code +"," +
-                "\"message\":\"" + message +"\"}";
+        return "{\"statusCode\":" + code + "," +
+                "\"message\":\"" + message + "\"}";
     }
 }

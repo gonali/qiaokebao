@@ -87,4 +87,7 @@ public class UserInfoController {
 
         return ResStatus.failedReturn(ResCodes.ERROR_7, ErrMsg.getErrMsg(ResCodes.ERROR_7));
     }
+
+
+
 }

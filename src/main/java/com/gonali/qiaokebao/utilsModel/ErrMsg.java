@@ -23,9 +23,11 @@ public final class ErrMsg {
        //msg 7
             "Server internal error!!!",
        //msg 8
-            "Checksum Signature failed."
+            "Checksum Signature failed.",
        //msg 9
+            "user not exists.",
        //msg 10
+            "user password error."
        //msg 11
        //msg 12
        //msg 13

@@ -152,7 +152,7 @@ public class UserRegisterController {
 
         String data = GetServletRequestBody.getBodyString(request);
 
-        if (data == null)
+        if (data == null || data.length() == 0)
             return ResStatus.failedReturn(ResCodes.ERROR_1, ErrMsg.getErrMsg(ResCodes.ERROR_1));
 
         JSONObject jsonObject;
@@ -165,12 +165,12 @@ public class UserRegisterController {
         }
 
         User user = new User();
-        String authCode = (String)jsonObject.get("authCode");
+        String authCode = (String) jsonObject.get("authCode");
         user.setUserId((String) jsonObject.get("phone"));
-        user.setNickName((String)jsonObject.get("nickname"));
+        user.setNickName((String) jsonObject.get("nickname"));
 
         try {
-            if(!registerService.registerConfirm(user, authCode))
+            if (!registerService.registerConfirm(user, authCode))
                 return ResStatus.failedReturn(ResCodes.ERROR_5, ErrMsg.getErrMsg(ResCodes.ERROR_5));
         } catch (Exception e) {
             e.printStackTrace();
@@ -178,11 +178,11 @@ public class UserRegisterController {
         }
 
         try {
-            if(!userService.userRegister(user))
-                return ResStatus.failedReturn(ResCodes.ERROR_6,ErrMsg.getErrMsg(ResCodes.ERROR_6));
+            if (!userService.userRegister(user))
+                return ResStatus.failedReturn(ResCodes.ERROR_6, ErrMsg.getErrMsg(ResCodes.ERROR_6));
         } catch (Exception e) {
             e.printStackTrace();
-            return ResStatus.failedReturn(ResCodes.ERROR_6,ErrMsg.getErrMsg(ResCodes.ERROR_6));
+            return ResStatus.failedReturn(ResCodes.ERROR_6, ErrMsg.getErrMsg(ResCodes.ERROR_6));
         }
 
         return ResStatus.successReturn();

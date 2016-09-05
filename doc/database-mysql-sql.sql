@@ -255,3 +255,19 @@ CREATE TABLE `tbPay`(
   PRIMARY KEY (`payId`),
   FOREIGN KEY (`userId`) REFERENCES tbUser(`userId`)
 );
+
+
+
+
+/**
+ the system admin table
+ */
+
+CREATE TABLE `tbSys`(
+  `id` INT AUTO_INCREMENT,
+  `name` VARCHAR(10),
+  `password` VARCHAR(512),
+
+  UNIQUE KEY (`name`),
+  PRIMARY KEY (`id`)
+);

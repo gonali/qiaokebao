@@ -27,8 +27,9 @@ public final class ErrMsg {
        //msg 9
             "user not exists.",
        //msg 10
-            "user password error."
+            "user password error.",
        //msg 11
+            "access not allow.",
        //msg 12
        //msg 13
        //msg 14

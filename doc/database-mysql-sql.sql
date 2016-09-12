@@ -8,12 +8,12 @@
  */
 CREATE TABLE `tbRole` (
 
-`roleId` BIGINT  AUTO_INCREMENT COMMENT '角色Id',
-`name` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '角色名称',
-`authority` VARCHAR (9) CHARACTER SET utf8 DEFAULT 'rwx------' COMMENT '权限 参考于linux 为 属主-好友-其他',
-`createDate` DATETIME DEFAULT NULL,
-`delFlag` BOOLEAN DEFAULT FALSE ,
- PRIMARY KEY (`roleId`)
+  `roleId` BIGINT  AUTO_INCREMENT COMMENT '角色Id',
+  `name` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '角色名称',
+  `authority` VARCHAR (9) CHARACTER SET utf8 DEFAULT 'rwx------' COMMENT '权限 参考于linux 为 属主-好友-其他',
+  `createDate` DATETIME DEFAULT NULL,
+  `delFlag` BOOLEAN DEFAULT FALSE ,
+  PRIMARY KEY (`roleId`)
 
 );
 
@@ -47,24 +47,24 @@ schlLocation JSON:
 /**
  the user table
  */
- CREATE TABLE `tbUser` (
+CREATE TABLE `tbUser` (
 
- `userId` VARCHAR (13) CHARACTER SET utf8 NOT NULL  COMMENT '主键 用户Id 以电话号码注册',
- `roleId` BIGINT DEFAULT NULL COMMENT '外键 用户角色Id',
- `schlId` BIGINT DEFAULT NULL COMMENT '外键 学校Id',
- `realName` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '用户真实姓名',
- `nickName` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '用户昵称',
- `sex`  ENUM('F', 'M', 'S') CHARACTER SET utf8 DEFAULT 'S' COMMENT '用户性别 F 男 M 女 S 保密',
- `birthday` DATE DEFAULT NULL COMMENT '出生日期',
- `email` VARCHAR (64) CHARACTER SET utf8 DEFAULT NULL COMMENT '电子邮件',
- `registerDate` DATETIME DEFAULT NULL COMMENT '注册时间',
- `password` VARCHAR (64) CHARACTER SET utf8 DEFAULT NULL COMMENT '登录密码',
+  `userId` VARCHAR (13) CHARACTER SET utf8 NOT NULL  COMMENT '主键 用户Id 以电话号码注册',
+  `roleId` BIGINT DEFAULT NULL COMMENT '外键 用户角色Id',
+  `schlId` BIGINT DEFAULT NULL COMMENT '外键 学校Id',
+  `realName` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '用户真实姓名',
+  `nickName` VARCHAR (16) CHARACTER SET utf8 DEFAULT NULL COMMENT '用户昵称',
+  `sex`  ENUM('F', 'M', 'S') CHARACTER SET utf8 DEFAULT 'S' COMMENT '用户性别 F 男 M 女 S 保密',
+  `birthday` DATE DEFAULT NULL COMMENT '出生日期',
+  `email` VARCHAR (64) CHARACTER SET utf8 DEFAULT NULL COMMENT '电子邮件',
+  `registerDate` DATETIME DEFAULT NULL COMMENT '注册时间',
+  `password` VARCHAR (64) CHARACTER SET utf8 DEFAULT NULL COMMENT '登录密码',
 
- PRIMARY KEY (`userId`),
- FOREIGN KEY (`roleId`) REFERENCES tbRole(`roleId`),
- FOREIGN KEY (`schlId`) REFERENCES tbCllgInfo(`schlId`)
+  PRIMARY KEY (`userId`),
+  FOREIGN KEY (`roleId`) REFERENCES tbRole(`roleId`),
+  FOREIGN KEY (`schlId`) REFERENCES tbSchlInfo(`schlId`)
 
- );
+);
 
 /**
 register log table
@@ -90,10 +90,10 @@ CREATE TABLE `tbRgstrLog`(
 
 CREATE TABLE `tbCllgInfo`(
 
- `cllgId` BIGINT AUTO_INCREMENT COMMENT '主键 学院Id',
- `userId` VARCHAR(13) CHARACTER SET  utf8 NOT NULL COMMENT '外键 用户Id' ,
- `cllgName` VARCHAR(64) CHARACTER SET utf8 DEFAULT NULL COMMENT '学院名称',
- `clssName` VARCHAR(64) CHARACTER SET utf8 DEFAULT NULL COMMENT '班级名称',
+  `cllgId` BIGINT AUTO_INCREMENT COMMENT '主键 学院Id',
+  `userId` VARCHAR(13) CHARACTER SET  utf8 NOT NULL COMMENT '外键 用户Id' ,
+  `cllgName` VARCHAR(64) CHARACTER SET utf8 DEFAULT NULL COMMENT '学院名称',
+  `clssName` VARCHAR(64) CHARACTER SET utf8 DEFAULT NULL COMMENT '班级名称',
   `delFlag` BOOLEAN DEFAULT FALSE,
 
   PRIMARY KEY (`cllgId`),
@@ -107,16 +107,16 @@ CREATE TABLE `tbCllgInfo`(
  */
 
 CREATE TABLE `tbCrsInfo`(
- `crsId` BIGINT AUTO_INCREMENT COMMENT '课程Id',
- `userId` VARCHAR(13) CHARACTER SET utf8 NOT NULL COMMENT '外键 用户Id' ,
- `crsName` VARCHAR(32) CHARACTER SET utf8 DEFAULT NULL COMMENT '课程名称',
- `crsLocation` VARCHAR(1024) CHARACTER SET utf8 DEFAULT NULL COMMENT '课程上课地点',
- `crsTchrName` VARCHAR(32) CHARACTER SET utf8 DEFAULT NULL COMMENT '上课老师名字',
- `crsWeek` INT COMMENT '上课时间的周 0 1 2 3 4 5 6 代表 周日到周六',
- `crsTime` VARCHAR(16) COMMENT '上课的时间段',
+  `crsId` BIGINT AUTO_INCREMENT COMMENT '课程Id',
+  `userId` VARCHAR(13) CHARACTER SET utf8 NOT NULL COMMENT '外键 用户Id' ,
+  `crsName` VARCHAR(32) CHARACTER SET utf8 DEFAULT NULL COMMENT '课程名称',
+  `crsLocation` VARCHAR(1024) CHARACTER SET utf8 DEFAULT NULL COMMENT '课程上课地点',
+  `crsTchrName` VARCHAR(32) CHARACTER SET utf8 DEFAULT NULL COMMENT '上课老师名字',
+  `crsWeek` INT COMMENT '上课时间的周 0 1 2 3 4 5 6 代表 周日到周六',
+  `crsTime` VARCHAR(16) COMMENT '上课的时间段',
 
- PRIMARY KEY (`crsId`),
- FOREIGN KEY (`userId`) REFERENCES tbUser(`userId`)
+  PRIMARY KEY (`crsId`),
+  FOREIGN KEY (`userId`) REFERENCES tbUser(`userId`)
 
 );
 
@@ -231,8 +231,8 @@ CREATE TABLE `tbExpns` (
   `status` ENUM('SUCCESS', 'FAILED') CHARACTER SET utf8 DEFAULT NULL COMMENT '消费状态',
 
   PRIMARY KEY (`expnsId`),
-  FOREIGN KEY (`userId`) REFERENCES tbMsgTask(`creatorId`),
-  FOREIGN KEY (`msgId`) REFERENCES tbMsgTask(`msgId`)
+  FOREIGN KEY (`userId`) REFERENCES tbUser(`userId`),
+  FOREIGN KEY (`msgId`) REFERENCES tbMsgJob(`msgId`)
 
 );
 

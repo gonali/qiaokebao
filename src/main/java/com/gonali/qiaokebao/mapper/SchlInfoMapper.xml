@@ -12,7 +12,7 @@
         WHERE schlId=#{schlId}
     </update>
 
-    <select id="findById">
+    <select id="findById" resultType="SchlInfo">
         SELECT * FROM tbSchlInfo WHERE schlId=#{id}
     </select>
 

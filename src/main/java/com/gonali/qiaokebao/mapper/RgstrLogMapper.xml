@@ -8,11 +8,11 @@
     </insert>
 
     <update id="registerConfirm">
-        UPDATE tbRgisterLog SET  status='SUCCESS',isValid=FALSE  WHERE rgstrId=#{rgstrId} AND phone = #{phone}
+        UPDATE tbRgstrLog SET  status='SUCCESS',isValid=FALSE  WHERE rgstrId=#{rgstrId} AND phone = #{phone}
     </update>
 
 
-    <select id="findByPhoneAndCode">
+    <select id="findByPhoneAndCode" resultType="RgstrLog">
         SELECT * FROM tbRgstrLog WHERE phone=#{phone} AND authCode=#{code} AND isValid=TRUE ORDER BY #{order}
     </select>
 

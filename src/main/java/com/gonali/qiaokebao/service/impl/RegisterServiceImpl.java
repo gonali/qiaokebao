@@ -41,7 +41,7 @@ public class RegisterServiceImpl implements RegisterService {
     @Override
     public boolean registerConfirm(User user, String authCode) throws Exception {
 
-        List<RgstrLog> rgstrLogs = mapper.findByPhoneAndCode("datetime", user.getUserId(), authCode);
+        List<RgstrLog> rgstrLogs = mapper.findByPhoneAndCode(user.getUserId(), authCode, "datetime");
         if (rgstrLogs.size() == 0)
             return false;
 

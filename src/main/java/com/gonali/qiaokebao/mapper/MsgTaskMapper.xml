@@ -10,11 +10,11 @@
         #{createDate},#{finishDate},#{confirmDate})
     </insert>
 
-    <select id="selectByCreatorId">
+    <select id="selectByCreatorId" resultType="MsgTask">
         SELECT * FROM tbMsgTask WHERE creatorId=#{creatorId}
     </select>
 
-    <select id="selectByGetterId">
+    <select id="selectByGetterId" resultType="MsgTask">
         SELECT * FROM tbMsgTask WHERE creatorId=#{geterId}
     </select>
 

@@ -11,12 +11,12 @@
         UPDATE tbPay SET delFlag = TRUE WHERE payId = #{id}
     </update>
 
-    <select id="findAll">
+    <select id="findAll" resultType="Pay">
         SELECT * FROM tbPay ORDER BY #{order} DESC
     </select>
 
 
-    <select id="findAllByUserId">
+    <select id="findAllByUserId" resultType="Pay">
         SELECT * FROM tbPay WHERE userId=#{userId} ORDER BY createDate DESC
     </select>
 

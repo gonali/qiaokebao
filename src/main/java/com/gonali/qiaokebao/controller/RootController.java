@@ -93,7 +93,7 @@ public class RootController {
         SchlLocation schlLocation = new SchlLocation();
         schlLocation.setProvince((String) jsonObject.getJSONObject("location").get("province"));
         schlLocation.setCity((String) jsonObject.getJSONObject("location").get("city"));
-        schlLocation.setCityArea((String) jsonObject.getJSONObject("location").get("ctiyArea"));
+        schlLocation.setCityArea((String) jsonObject.getJSONObject("location").get("cityArea"));
         schlLocation.setSchlArea((String) jsonObject.getJSONObject("location").get("schlArea"));
 
         SchlInfo schlInfo = new SchlInfo();

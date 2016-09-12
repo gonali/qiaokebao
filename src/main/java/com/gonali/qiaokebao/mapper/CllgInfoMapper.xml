@@ -20,19 +20,19 @@
         WHERE cllgId=#{cllgId}
     </update>
 
-    <select id="countAll">
+    <select id="countAll" resultType="integer">
         SELECT COUNT(*) FROM tbCllgInfo
     </select>
 
-    <select id="findById">
+    <select id="findById" resultType="CllgInfo">
         SELECT * FROM tbCllgInfo WHERE cllgId=#{id}
     </select>
 
-    <delete id="findAll">
+    <select id="findAll" resultType="CllgInfo">
         SELECT * FROM tbCllgInfo ORDER BY #{order}
-    </delete>
+    </select>
 
-    <select id="findByPage">
+    <select id="findByPage" resultType="CllgInfo">
         SELECT * FROM tbCllgInfo ORDER BY #{order} DESC LIMIT #{start},#{pageSize}
     </select>
 

@@ -7,12 +7,12 @@
         VALUES (#{userId},#{credit},#{direction},#{describe})
     </insert>
 
-    <select id="findByUserId">
+    <select id="findByUserId" resultType="CrdtLog">
         SELECT * FROM tbCrdtLog WHERE userId = #{userId}
     </select>
 
 
-    <select id="findPageByUserId">
+    <select id="findPageByUserId" resultType="CrdtLog">
         SELECT * FROM tbCrdtLog WHERE userId = #{userId} ORDER BY
         #{order} LIMIT #{start},#{pageSize}
     </select>

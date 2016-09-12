@@ -3,9 +3,13 @@
 <mapper namespace="com.gonali.qiaokebao.mapper.UserMapper">
 
     <insert id="insert">
-        INSERT INTO tbUser (userId,roleId,schlId,realName,nickName,sex,birthday,email,registerDate,password)
-        VALUES (#{userId},#{roleId},#{schlId},#{realName},#{nickName},#{sex},#{birthday},#{email},#{registerDate},#{password})
+        INSERT INTO tbUser (userId,realName,nickName,sex,birthday,email,registerDate,password)
+        VALUES (#{userId},#{realName},#{nickName},#{sex},#{birthday},#{email},#{registerDate},#{password})
     </insert>
+
+    <select id="findById" resultType="User">
+        SELECT * FROM tbUser WHERE userId=#{id}
+    </select>
 
     <update id="update">
         UPDATE tbUser SET roleId=#{roleId},schlId=#{schlId},realName=#{realName},nickName=#{nickName},sex=#{sex},birthday=#{birthday},email=#{email},password=#{password}

@@ -16,5 +16,5 @@ public interface RgstrLogMapper extends BaseDao<RgstrLog> {
 
     Integer  registerConfirm(RgstrLog model) throws Exception;
 
-    List<RgstrLog> findByPhoneAndCode(@Param("order") String order, @Param("phone") Object phone, @Param("code") Object code) throws Exception;
+    List<RgstrLog> findByPhoneAndCode( @Param("phone") Object phone, @Param("code") Object code, @Param("order") String order) throws Exception;
 }

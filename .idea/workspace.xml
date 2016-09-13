@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c58fabb-f889-4531-a33f-c299eb1d7094" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserActionController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qiaokebao.iml" afterPath="$PROJECT_DIR$/Qiaokebao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/RootController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/RootController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtLogMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CrdtLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/MsgTaskMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/MsgTaskMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/PayMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/PayMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/RgstrLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/RgstrLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/RgstrLogMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/RgstrLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/SchlInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/SchlInfoMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/SysMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/SysMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/impl/RegisterServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/impl/RegisterServiceImpl.java" />
     </list>
     <ignored path="Qiaokebao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +49,50 @@
     <favorites_list name="Qiaokebao" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CllgInfoMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <folding>
+                <marker date="1473681559248" expanded="true" signature="247:347" ph="INSERT INTO tbCllgInfo... " />
+                <marker date="1473681559248" expanded="true" signature="396:437" ph="DELETE FROM " />
+                <marker date="1473681559248" expanded="true" signature="490:543" ph="UPDATE tbCll... " />
+                <marker date="1473681559248" expanded="true" signature="592:686" ph="UPDATE tbCll... " />
+                <marker date="1473681559248" expanded="true" signature="758:789" ph="SELECT COUNT... tbCllgInfo" />
+                <marker date="1473681559248" expanded="true" signature="862:905" ph="SELECT * FRO... tbCllgInfo" />
+                <marker date="1473681559248" expanded="true" signature="977:1019" ph="SELECT * FRO... tbCllgInfo" />
+                <marker date="1473681559248" expanded="true" signature="1094:1168" ph="SELECT * FRO... tbCllgInfo" />
+                <marker date="1473681559248" expanded="true" signature="1223:1338" ph="UPDATE tbCll... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserActionController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserActionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SMSModel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sms_config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/SendSMSauthCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/authorityCode/TokenModel.java" />
@@ -136,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserActionController.java" />
       </list>
     </option>
   </component>
@@ -234,54 +265,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -335,7 +318,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,36 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiaokebao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1026,7 +979,7 @@
       <workItem from="1473037152047" duration="2711000" />
       <workItem from="1473673121302" duration="2463000" />
       <workItem from="1473676163848" duration="121000" />
-      <workItem from="1473676561063" duration="7088000" />
+      <workItem from="1473676561063" duration="11086000" />
     </task>
     <task id="LOCAL-00001" summary="add some xml files and mapper">
       <created>1471853316310</created>
@@ -1077,11 +1030,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472433724876</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix Mapper xml">
+      <created>1473687031653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1473687031653</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122332000" />
+    <option name="totallyTimeSpent" value="126330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1599" y="28" width="1922" height="1019" extended-state="6" />
@@ -1108,7 +1068,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28232503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28232503" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1135,7 +1095,8 @@
     <MESSAGE value="add some new." />
     <MESSAGE value="add AccessToken get request." />
     <MESSAGE value="add authcode send to register" />
-    <option name="LAST_COMMIT_MESSAGE" value="add authcode send to register" />
+    <MESSAGE value="fix Mapper xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Mapper xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,13 +1109,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="370" column="19" selection-start-line="370" selection-start-column="19" selection-end-line="370" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/utils/GetServletRequestBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1203,13 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
           <caret line="69" column="57" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1501,24 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <marker date="1473681559248" expanded="true" signature="247:347" ph="INSERT INTO tbCllgInfo... " />
-            <marker date="1473681559248" expanded="true" signature="396:437" ph="DELETE FROM " />
-            <marker date="1473681559248" expanded="true" signature="490:543" ph="UPDATE tbCll... " />
-            <marker date="1473681559248" expanded="true" signature="592:686" ph="UPDATE tbCll... " />
-            <marker date="1473681559248" expanded="true" signature="758:789" ph="SELECT COUNT... tbCllgInfo" />
-            <marker date="1473681559248" expanded="true" signature="862:905" ph="SELECT * FRO... tbCllgInfo" />
-            <marker date="1473681559248" expanded="true" signature="977:1019" ph="SELECT * FRO... tbCllgInfo" />
-            <marker date="1473681559248" expanded="true" signature="1094:1168" ph="SELECT * FRO... tbCllgInfo" />
-            <marker date="1473681559248" expanded="true" signature="1223:1338" ph="UPDATE tbCll... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1622,6 +1551,42 @@
         <state relative-caret-position="-1138">
           <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/mapper/CllgInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <marker date="1473681559248" expanded="true" signature="247:347" ph="INSERT INTO tbCllgInfo... " />
+            <marker date="1473681559248" expanded="true" signature="396:437" ph="DELETE FROM " />
+            <marker date="1473681559248" expanded="true" signature="490:543" ph="UPDATE tbCll... " />
+            <marker date="1473681559248" expanded="true" signature="592:686" ph="UPDATE tbCll... " />
+            <marker date="1473681559248" expanded="true" signature="758:789" ph="SELECT COUNT... tbCllgInfo" />
+            <marker date="1473681559248" expanded="true" signature="862:905" ph="SELECT * FRO... tbCllgInfo" />
+            <marker date="1473681559248" expanded="true" signature="977:1019" ph="SELECT * FRO... tbCllgInfo" />
+            <marker date="1473681559248" expanded="true" signature="1094:1168" ph="SELECT * FRO... tbCllgInfo" />
+            <marker date="1473681559248" expanded="true" signature="1223:1338" ph="UPDATE tbCll... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gonali/qiaokebao/controller/UserActionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
